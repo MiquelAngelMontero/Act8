@@ -23,7 +23,7 @@ public class Password {
 		this.contraseña = generarContra(longitud);
 	}
 	
-	
+	//Metodos
 	//Metodo para generar contraseña
 	public int generarContra(int longitud) {
 		String contrasenyaS = "";
