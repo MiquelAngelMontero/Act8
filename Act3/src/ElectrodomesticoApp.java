@@ -12,6 +12,10 @@ public class ElectrodomesticoApp {
 		Electrodomestico e2 = new Electrodomestico(600, 60);
 		Electrodomestico e3 = new Electrodomestico(200, "rojo", 3, 50);
 		
+		System.out.println(e1.toString());
+		System.out.println(e2.toString());
+		System.out.println(e3.toString());
+		
 	}
 
 }

@@ -4,21 +4,26 @@
  *
  */
 public class Electrodomestico {
-
+	
+	private final double PRECIOBASE = 100;
+	private final String COLOR = "blanco";
+	private final int CONSUMOE = 6;
+	private final double PESO = 5;
+	
 	//Atributos
-	private double precioBase;
-	private String color;
-	private int consumoE;
-	private double peso;
+	private double precioBase = PRECIOBASE;
+	private String color = COLOR;
+	private int consumoE = CONSUMOE;
+	private double peso = PESO;
 	
 	
 	//Constructores
 	//Constructor por defecto
 	public Electrodomestico() {
-		this.precioBase = 100;
-		this.color = "blanco";
-		this.consumoE = 6;
-		this.peso = 5;
+		this.precioBase = PRECIOBASE;
+		this.color = COLOR;
+		this.consumoE = CONSUMOE;
+		this.peso = PESO;
 	}
 
 	
@@ -71,6 +76,14 @@ public class Electrodomestico {
 			return 6;
 		}
 		
+	}
+
+
+	@Override
+	public String toString() {
+		return "Electrodomestico [PRECIOBASE=" + PRECIOBASE + ", COLOR=" + COLOR + ", CONSUMOE=" + CONSUMOE + ", PESO="
+				+ PESO + ", precioBase=" + precioBase + ", color=" + color + ", consumoE=" + consumoE + ", peso=" + peso
+				+ "]";
 	}
 	
 }

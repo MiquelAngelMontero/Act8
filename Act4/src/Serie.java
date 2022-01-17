@@ -5,10 +5,13 @@
  */
 public class Serie {
 	
+	private final boolean ENTREGADO = false;
+	private final int TEMPORADAS = 3;
+	
 	//Atributos
 	private String titulo;
-	private int temporadas;
-	private boolean entregado;
+	private int temporadas = TEMPORADAS;
+	private boolean entregado = ENTREGADO;
 	private String genero;
 	private String creador;
 
@@ -17,8 +20,8 @@ public class Serie {
 	//Constructor por defecto
 	public Serie() {
 		this.titulo = "";
-		this.temporadas = 3;
-		this.entregado = false;
+		this.temporadas = TEMPORADAS;
+		this.entregado = ENTREGADO;
 		this.genero = "";
 		this.creador = "";
 	}
@@ -26,8 +29,8 @@ public class Serie {
 	//Constructor con titulo y creador
 	public Serie(String titulo, String creador) {
 		this.titulo = titulo;
-		this.temporadas = 3;
-		this.entregado = false;
+		this.temporadas = TEMPORADAS;
+		this.entregado = ENTREGADO;
 		this.genero = "";
 		this.creador = creador;
 	}
@@ -37,8 +40,15 @@ public class Serie {
 		super();
 		this.titulo = titulo;
 		this.temporadas = temporadas;
-		this.entregado = false;
+		this.entregado = ENTREGADO;
 		this.genero = genero;
 		this.creador = creador;
-	}	
+	}
+
+	@Override
+	public String toString() {
+		return "Serie [ENTREGADO=" + ENTREGADO + ", TEMPORADAS=" + TEMPORADAS + ", titulo=" + titulo + ", temporadas="
+				+ temporadas + ", entregado=" + entregado + ", genero=" + genero + ", creador=" + creador + "]";
+	}
+	
 }

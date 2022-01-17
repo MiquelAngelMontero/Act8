@@ -5,11 +5,13 @@
  */
 public class Persona {
 	
+	private final char SEXO = 'H';
+	
 	//Atributos
 	private String nombre;
 	private int edad;
 	private String dni;
-	private char sexo;
+	private char sexo = SEXO;
 	private double peso;
 	private double altura;
 	
@@ -19,7 +21,7 @@ public class Persona {
 		this.nombre = "";
 		this.edad = 0;
 		this.dni = dni;
-		this.sexo = 'H';
+		this.sexo = SEXO;
 		this.peso = 0;
 		this.altura = 0;
 		
@@ -44,4 +46,12 @@ public class Persona {
 		this.peso = peso;
 		this.altura = altura;
 	}
+
+	@Override
+	public String toString() {
+		return "Persona [nombre=" + nombre + ", edad=" + edad + ", dni=" + dni + ", sexo=" + sexo + ", peso=" + peso
+				+ ", altura=" + altura + "]";
+	}
+	
+	
 }
